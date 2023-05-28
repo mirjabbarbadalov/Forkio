@@ -1,0 +1,55 @@
+@include mobile{
+
+  .people-talking-section{
+    background-image: url("../img/Layer 1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    &_title{
+      font-size: 3.6rem;
+      color: $ptTitle;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    &_all-items{
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      &_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.6rem;
+        padding: 0 1.4rem;
+        text-align: center;
+        color: $ptDesc;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: $fw-bold;
+      }
+    }
+
+    &_info{
+      font-size: 1.4rem;
+      color: $ptInfo;
+      text-align: center;
+      padding: 2.6rem;
+    }
+
+    hr{
+      border: 1px solid $ptInfo;
+      width: 80%;
+      margin: 0 auto;      
+    }
+
+  }
+
+}
