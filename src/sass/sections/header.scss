@@ -331,15 +331,12 @@
 
       &_container{
         max-width: 120rem;
-        border: 1px solid black;
         height: 80vh;
         margin: 0 auto;
         margin-bottom:10rem;
-        display: flex;
-        flex-direction: column;
         
         .desktop-nav{
-          padding:2rem 6rem;
+          padding:2rem 5rem;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -430,8 +427,13 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          position: relative;
-          top: 36rem;
+          position: absolute;
+          top: 80vh;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+
+
 
           &_btn{
             width: 39rem;
