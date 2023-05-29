@@ -22,8 +22,8 @@
   <body>
     <header class="header-section">
       <div class="header-section_container">
-        <div class="header-section_container_nav">
-          <div class="header-section_container_nav_up">
+        <div class="header-section_container_nav tablet-hidden desktop-hidden">
+          <div class="header-section_container_nav_up ">
             <a href="#" class="logo">
               <img class="logo-img" src="./dist/img/mainlogo.png" alt="" />
             </a>
@@ -36,7 +36,7 @@
             alt=""
           />
 
-          <div class="header-section_container_nav_open-nav mobile-hidden">
+          <div class="header-section_container_nav_open-nav mobile-hidden desktop-hidden">
             <ul class="header-section_container_nav_open-nav_list">
               <li id="nav-item" class="header-section_container_nav_open-nav_list_item">
                 <a
@@ -70,13 +70,53 @@
      
             </ul>
           </div>
+        </div>
 
+        <div class="desktop-nav mobile-hidden tablet-hidden">
+          <a href="#" class="desktop-nav_logo">
+            <img class="desktop-nav_logo_img" src="./dist/img/mainlogo.png" alt="" />
+          </a>
+          <div class="desktop-nav_left">
+            <ul class="desktop-nav_list">
+              <li id="nav-item" class="desktop-nav_list_item">
+                <a
+                  href=""
+                  class="desktop-nav_list_item_link active"
+                >
+                  Overview
+                </a>
+              </li>
+ 
+  
+              <li id="nav-item" class="desktop-nav_list_item">
+                <a href="" class="desktop-nav_list_item_link">
+                  About Fork
+                </a>
+              </li>
+         
+  
+              <li id="nav-item" class="desktop-nav_list_item">
+                <a href="" class="desktop-nav_list_item_link">
+                  Buying Options
+                </a>
+              </li>
+         
+  
+              <li id="nav-item" class="desktop-nav_list_item">
+                <a href="" class="desktop-nav_list_item_link">
+                  Support
+                </a>
+              </li>
+     
+            </ul>
+            <button class="desktop-nav_button">Buy Now</button>
+          </div>
         </div>
 
         
 
 
-        <div id="header-nav" class="header-section_container_navigation hidden tablet-hidden">
+        <div id="header-nav" class="header-section_container_navigation hidden tablet-hidden desktop-hidden">
           <ul>
             <li id="nav-item" class="header-section_container_navigation_item">
               <a
