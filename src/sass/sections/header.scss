@@ -314,3 +314,154 @@
       }
     }
   }
+
+
+  @include desktop{
+
+    .desktop-hidden{
+      display: none;
+    }
+
+    .header-section{
+      
+      background-image: url("../img/img 1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &_container{
+        max-width: 120rem;
+        border: 1px solid black;
+        height: 80vh;
+        margin: 0 auto;
+        margin-bottom:10rem;
+        display: flex;
+        flex-direction: column;
+        
+        .desktop-nav{
+          padding:2rem 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          
+
+          &_left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+          }
+
+          &_list{
+            display: flex;
+            gap: 2rem;
+
+            &_item{
+
+              &_link{
+                color: $navLink;
+                font-size: 1.6rem;
+                font-weight: $fw-bold;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                  color:$navHoverLink;
+                }
+              }
+            }
+          }
+
+          &_button{
+            width: 14.5rem;
+            height: 3.7rem;
+            border: none;
+            border-radius: 4rem;
+            background-color: $headerBtnBg;
+            cursor: pointer;
+            color: $headerTitle;
+            font-size: 1.6rem;
+            font-weight: $fw-bold;
+            letter-spacing: 1.2px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+              background-color: $navHoverLink;
+              border: 1px solid $headerBtnBg;
+              color: $navLink;
+              
+            }
+          }
+        }
+
+        &_main{
+          
+          &_text{
+            display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+
+            &_title{
+              color: $headerTitle;
+              font-size: 8.2rem;
+              font-weight: $fw-bold;
+            }
+
+            &_desc{
+              color: $headerDesc;
+              font-size: 3rem;
+              font-weight: $fw-normal;
+            }
+
+            &_info{
+              color: $headerInfo;
+              font-size: 1.6rem;
+              font-weight: $fw-normal;
+            }
+
+          
+          }
+        }
+
+        &_last{
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          top: 36rem;
+
+          &_btn{
+            width: 39rem;
+            height: 6.2rem;
+            border-radius: 4rem;
+            border: none;
+            background-color: $headerBtnBg;
+            margin-top: -3.1rem;
+            color: $headerTitle;
+            font-size: 2.1rem;
+            font-weight: $fw-bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            
+
+            &:hover{
+              border: 2px solid $headerBtnBg;
+              background-color: $headerTitle;
+              color: $headerBtnBg;
+            }
+          }
+
+          &_info{
+            font-size: 1.4rem;
+            font-weight: $fw-normal;
+            color: $headerInfo;
+            margin-top: 2rem;
+          }
+        }
+
+      }
+    }
+  }
