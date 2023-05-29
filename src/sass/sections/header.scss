@@ -1,7 +1,9 @@
-
 @include mobile {
 
 
+  .mobile-hidden {
+    display: none;
+  }
 
   .header-section {
     &_container {
@@ -13,25 +15,36 @@
         padding: 2rem 1rem;
         background-color: $navBg;
 
-        &_button {
+        &_up{
+          width: 100%;
           display: flex;
+          flex-direction: row;
           align-items: center;
-          justify-content: center;
-          width: 12rem;
-          height: 3.7rem;
-          border: none;
-          border-radius: 40px;
-          background-color: $headerBtnBg;
-          color: $headerTitle;
-          font-weight: $fw-bold;
-          letter-spacing: 2px;
-          cursor: pointer;
+
+          &_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 12rem;
+            height: 3.7rem;
+            border: none;
+            border-radius: 40px;
+            background-color: $headerBtnBg;
+            color: $headerTitle;
+            font-weight: $fw-bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+            margin: 0 auto;
+          }
+  
+          &_icon {
+            width: 4rem;
+            cursor: pointer;
+          }
+
         }
 
-        &_icon {
-          width: 4rem;
-          cursor: pointer;
-        }
+        
       }
 
       &_navigation {
@@ -79,22 +92,22 @@
           border: none;
         }
 
-        &.hidden{
+        &.hidden {
           display: none;
         }
 
       }
 
-      &_main{
+      &_main {
         width: 100vw;
         min-height: 90rem;
         background-image: url("../img/header-bg.png");
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         background-position: center;
         padding: 4rem;
 
-        &_text{
+        &_text {
 
           display: flex;
           flex-direction: column;
@@ -103,20 +116,20 @@
           gap: 2rem;
           margin-top: 5rem;
 
-          &_title{
+          &_title {
             color: $headerTitle;
             font-size: 4.8rem;
             font-weight: $fw-bold;
           }
-  
-          &_desc{
+
+          &_desc {
             color: $headerDesc;
             font-size: 1.8rem;
-            font-weight:$fw-normal;
+            font-weight: $fw-normal;
             text-align: center;
           }
-  
-          &_info{
+
+          &_info {
             color: $headerInfo;
             font-size: 1.4rem;
             font-weight: $fw-normal;
@@ -126,28 +139,28 @@
 
       }
 
-      &_last{
+      &_last {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1.4rem;
 
-        &_btn{
+        &_btn {
           width: 90%;
           height: 4.5rem;
           background-color: $navActiveMobileLink;
           border: none;
           border-radius: 4rem;
           margin-top: -2rem;
-          color:#FFFFFF ;
+          color: #FFFFFF;
           font-size: 1.8rem;
           font-weight: $fw-bold;
           letter-spacing: 1.2px;
           cursor: pointer;
         }
 
-        &_info{
+        &_info {
           color: $headerInfo;
           font-size: 1.4rem;
           font-weight: $fw-normal;
@@ -158,3 +171,144 @@
   }
 
 }
+
+@include tablet {
+  .tablet-hidden {
+    display: none;
+  }
+
+  .header-section {
+    &_container {
+
+
+      &_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        background-color: $navBg;
+        padding: 2rem;
+
+        &_up {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          &_button {
+            width: 14rem;
+            height: 3.5rem;
+            border-radius: 3.5rem;
+            border: none;
+            background-color: $headerBtnBg;
+            color: $headerTitle;
+            font-size: 1.6rem;
+            font-weight: $fw-bold;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+          }
+        }
+
+        &_open-nav{
+          width: 80%;
+          padding-top: 1.4rem;
+          &_list{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+            justify-content: space-around;
+
+            &_item{
+              
+              &_link{
+                color: $navLink;
+                font-size: 1.6rem;
+                font-weight: $fw-bold;
+                letter-spacing: 1.2px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                  color: $navHoverLink;
+                }
+              }
+            }
+          }
+        }
+
+        }
+
+        &_main{
+          width: 100vw;
+          height: 60vh;
+          background-image: url("../img/img 1.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          &_text{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+
+            &_title{
+              color: $headerTitle;
+              font-size: 7.2rem;
+              font-weight: $fw-bold;
+            }
+
+            &_desc{
+              color: $headerDesc;
+              font-size: 2.4rem;
+              font-weight: $fw-normal;
+              text-align: center;
+            }
+
+            &_info{
+              color: $headerInfo;
+              font-size: 1.4rem;
+              font-weight: $fw-normal;
+            }
+          }
+
+        }
+
+        &_last{
+          width: 100%;
+          padding:0 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+
+          &_btn{
+            width: 39rem;
+            border: none;
+            height: 6.2rem;
+            border-radius: 4rem;
+            background-color: $headerBtnBg;
+            color: $headerTitle;
+            font-size: 2.1rem;
+            font-weight: $fw-bold;
+            margin-top: -3.1rem;
+          }
+
+          &_info{
+            color: $headerInfo;
+            font-size: 1.4rem;
+            font-weight: $fw-normal;
+            margin-top: 2rem;
+          }
+
+        }
+
+
+
+      }
+    }
+  }
