@@ -20,24 +20,63 @@
     <title>Forkio</title>
   </head>
   <body>
-    <!-- Header Section Starts -->
-
     <header class="header-section">
       <div class="header-section_container">
         <div class="header-section_container_nav">
-          <a href="#" class="logo">
-            <img class="logo-img" src="./dist/img/mainlogo.png" alt="" />
-          </a>
-          <button class="header-section_container_nav_button">Buy Now</button>
+          <div class="header-section_container_nav_up">
+            <a href="#" class="logo">
+              <img class="logo-img" src="./dist/img/mainlogo.png" alt="" />
+            </a>
+            <button class="header-section_container_nav_up_button">Buy Now</button>
+          </div>
           <img
-            class="header-section_container_nav_icon"
+            class="header-section_container_nav_up_icon tablet-hidden"
             id="open-menu"
             src="./dist/img/hamburger.svg"
             alt=""
           />
+
+          <div class="header-section_container_nav_open-nav mobile-hidden">
+            <ul class="header-section_container_nav_open-nav_list">
+              <li id="nav-item" class="header-section_container_nav_open-nav_list_item">
+                <a
+                  href=""
+                  class="header-section_container_nav_open-nav_list_item_link active"
+                >
+                  Overview
+                </a>
+              </li>
+ 
+  
+              <li id="nav-item" class="header-section_container_nav_open-nav_list_item">
+                <a href="" class="header-section_container_nav_open-nav_list_item_link">
+                  About Fork
+                </a>
+              </li>
+         
+  
+              <li id="nav-item" class="header-section_container_nav_open-nav_list_item">
+                <a href="" class="header-section_container_nav_open-nav_list_item_link">
+                  Buying Options
+                </a>
+              </li>
+         
+  
+              <li id="nav-item" class="header-section_container_nav_open-nav_list_item">
+                <a href="" class="header-section_container_nav_open-nav_list_item_link">
+                  Support
+                </a>
+              </li>
+     
+            </ul>
+          </div>
+
         </div>
 
-        <div id="header-nav" class="header-section_container_navigation hidden">
+        
+
+
+        <div id="header-nav" class="header-section_container_navigation hidden tablet-hidden">
           <ul>
             <li id="nav-item" class="header-section_container_navigation_item">
               <a
@@ -71,6 +110,8 @@
             <hr />
           </ul>
         </div>
+
+
 
         <div class="header-section_container_main">
           <div class="header-section_container_main_text">
