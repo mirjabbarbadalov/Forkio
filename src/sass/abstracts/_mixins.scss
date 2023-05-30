@@ -5,7 +5,11 @@
 };
 
 @mixin tablet {
+<<<<<<< HEAD
   @media  only screen and (min-width: 481px) and (max-width:992px) {
+=======
+  @media  only screen and (min-width: 480px) and (max-width:992px) {
+>>>>>>> peopletalking
    @content
   }
 };
