@@ -1,10 +1,12 @@
 {
   "name": "forkio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Team 1:Team members: Mirjabbar Badalov, Ali Ramazanov's step project Forkio. Used Gulp automation. Design divided 2 parts, Header and People Are Talking About Fork sections designed by Mirjabbar, Revolutionary Editor, Here is what you get and Fork Subscription Pricing sections designed by Ali",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "dev": "gulp dev"
   },
   "author": "",
   "license": "ISC",
