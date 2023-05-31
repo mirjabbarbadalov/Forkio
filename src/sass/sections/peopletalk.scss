@@ -147,3 +147,103 @@
   }
 }
 
+@include desktop{
+
+  .people-talking-section{
+
+    &_container{
+      max-width: 120rem;
+    }
+
+    
+
+    background-image: url("../img/Layer 1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &_title{
+      font-size: 4.2rem;
+      color: $ptTitle;
+      text-align: center;
+      padding: 2rem;
+      font-weight: $fw-bold;
+    }
+
+    &_all-items{
+      padding: 2rem;
+      display: grid;
+      // padding: 1.5rem;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
+      grid-template-areas: "card1 card2"
+                            "card3  card4"
+                            "card5 card6";
+      align-items: center;
+      justify-content: space-between;
+      row-gap: 3rem;
+      column-gap: 4rem;
+
+      &_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        text-align: center;
+        padding: 2.4rem 1.2rem;
+      }
+
+      #item1{
+          grid-area: card1;
+      }
+      #item2{
+          grid-area: card2;
+      }
+      #item3{
+         grid-area: card3;
+      }
+      #item4{
+          grid-area: card4;
+      }
+      #item5{
+          grid-area: card5;
+      }
+      #item6{
+          grid-area: card6;
+      }
+
+    }
+
+    &_desc{
+        color: $ptDesc;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: $fw-bold;
+        }
+
+    &_info{
+      font-size: 1.4rem;
+      color: $ptInfo;
+      text-align: center;
+      padding: 2.6rem;
+      font-weight:$fw-normal;
+    }
+
+    hr{
+      border: 1px solid $ptInfo;
+      width: 80%;
+      margin: 0 auto;      
+    }
+
+  }
+
+}
+
