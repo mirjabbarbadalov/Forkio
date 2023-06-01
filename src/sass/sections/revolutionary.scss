@@ -1,0 +1,40 @@
+@import "../abstracts/all.scss";
+
+.revolutionary-editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  .re-header {
+    font-size: 2.6rem;
+    color: #635c73;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .re-content {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+.github-buttons-all {
+  .github-buttons1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    .watch-icon {
+      margin-right: 1rem;
+    }
+  }
+  .fork-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+}
