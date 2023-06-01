@@ -192,6 +192,29 @@
         background-color: $navBg;
         padding: 2rem;
 
+
+        .logo-section{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+        }
+
+        .logo-name{
+          color:$navLink;
+          font-size: 2.4rem;
+          font-weight: $fw-bold;
+          font-family: 'Lato', sans-serif;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          transition: all .3s ease-in-out;
+
+          &:hover{
+            color: #FFFFFF;
+          }
+        }
+        
+
         &_up {
           display: flex;
           align-items: center;
@@ -351,6 +374,28 @@
           justify-content: space-between;
           
 
+          .logo-section{
+                        display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+          }
+
+                    .logo-name{
+            color:$navLink;
+            font-size: 2.4rem;
+            font-weight: $fw-bold;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+              color: #FFFFFF;
+            }
+          }
+
+
           &_left{
             display: flex;
             align-items: center;
@@ -476,4 +521,5 @@
 
       }
     }
-  }
+    }
+  
