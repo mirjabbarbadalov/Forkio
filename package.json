@@ -8,7 +8,7 @@
     "build": "gulp build",
     "dev": "gulp dev"
   },
-  "author": "",
+  "author": "Ali Ramazanov, Mirjabbar Badalov",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
