@@ -1,0 +1,185 @@
+@import "../abstracts/all.scss";
+
+@media (min-width: 768px) {
+  .revolutionary-editor {
+    .re-header {
+      font-size: 4.2rem;
+    }
+    .re-content {
+      font-size: 2.1rem;
+    }
+  }
+  .github-buttons-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.6rem;
+    margin-top: 0;
+    margin-bottom: 10rem;
+    .fork-icon {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      margin-top: 5rem;
+      margin-left: 1rem;
+    }
+  }
+  .get-header h2 {
+    font-size: 4.2rem;
+  }
+  .get-content {
+    .get-card {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 3rem;
+      .get-card-text {
+        text-align: start;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+        .get-card-header {
+          margin-top: 1rem;
+          font-weight: 400;
+          padding: 0;
+          font-size: 1.6rem;
+          color: #323232;
+        }
+        .get-card-paragraph {
+          padding: 0;
+          font-size: 1.4rem;
+          color: #848e97;
+          font-weight: regular;
+          margin-bottom: 2rem;
+          margin-top: 0;
+        }
+      }
+      .icon {
+        margin-right: 2rem;
+        padding: 1rem;
+        .icon img {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 1rem;
+          text-align: initial;
+        }
+      }
+    }
+  }
+  .pricing-container {
+    background-image: url("/dist/img/pricing-base-tab.png");
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .pricing-header-text {
+    .pricing-header {
+      font-size: 4.2rem;
+      padding: 4rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .rev-container {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .get-content {
+    margin-bottom: 0;
+    background-color: #f4f4f4;
+    .get-card {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 3rem;
+      .get-card-text {
+        text-align: start;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+        .get-card-header {
+          margin-top: 1rem;
+          font-weight: 400;
+          padding: 0;
+          font-size: 1.6rem;
+          color: #323232;
+        }
+        .get-card-paragraph {
+          padding: 0;
+          font-size: 1.4rem;
+          color: #848e97;
+          font-weight: regular;
+          margin-bottom: 2rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .what-you-get-desktop-container {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .what-you-get-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 120rem;
+    gap: 3rem;
+    &__left {
+      .get-card {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem 3rem;
+        .get-card-text {
+          text-align: start;
+          align-items: flex-start;
+          justify-content: center;
+          margin-left: auto;
+          .get-card-header {
+            margin-top: 1rem;
+            font-weight: 400;
+            padding: 0;
+            font-size: 1.6rem;
+            color: #323232;
+          }
+          .get-card-paragraph {
+            padding: 0;
+            font-size: 1.4rem;
+            color: #848e97;
+            font-weight: regular;
+            margin-bottom: 2rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &__right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .get-header h2 {
+        padding: 0;
+      }
+    }
+  }
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .pricing-header-text {
+    .pricing-header {
+      font-size: 4.8rem;
+      padding: 5rem 1rem;
+    }
+  }
+  .desktop-hidden {
+    display: none;
+  }
+}
