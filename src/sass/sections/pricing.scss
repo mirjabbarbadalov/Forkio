@@ -5,12 +5,13 @@
     text-align: center;
     color: white;
     font-size: 2.8rem;
-    font-weight: 700;
-    background-color: #4a3b4e;
+    font-weight: $fw-bold;
+    background-color: $fsBackground;
     margin: 0;
     padding: 2rem;
   }
 }
+
 .pricing-container {
   display: flex;
   align-items: center;
@@ -20,26 +21,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .pricing-back {
   background-image: url("../img/pricing-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .fork-subscription-pricing {
-  max-width: 1200px;
+  max-width: 120rem;
   display: block;
   margin: 0 auto;
 }
+
 .pricing-card {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $fsPrice;
   height: 46rem;
   width: 26.5rem;
   margin-bottom: 2rem;
   background-image: url("../img/card-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   &__name {
     background-image: url("../img/heading-bg.png");
     background-repeat: no-repeat;
@@ -50,23 +55,27 @@
     margin: 0;
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
-    font-weight: 400;
+    font-weight: $fw-normal;
   }
+
   &__price {
     font-size: 6rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: $fw-bold;
     margin: 1.5rem 0 0 0;
   }
+
   &__dollar {
-    font-weight: 400;
+    font-weight: $fw-normal;
   }
+
   &__per-month {
     font-size: 1.4rem;
     text-align: center;
     text-transform: uppercase;
     margin: 1.3rem 0;
   }
+
   &__card-sep {
     display: flex;
     align-items: center;
@@ -74,25 +83,29 @@
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
+
   &__support {
     font-size: 1.6rem;
     text-align: center;
   }
+
   &__purchaseB-container {
     margin: 2rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   &__purchaseB {
     text-transform: uppercase;
     padding: 1.3rem 4rem;
     background-color: #776b79;
-    color: white;
+    color: $fsPrice;
     border: 0px double #cccccc;
     border-radius: 30px;
   }
 }
+
 .agency-theme {
   margin: 0 0 2rem 0;
   background-image: url("../img/base-agency.png");
@@ -101,13 +114,14 @@
   height: 55rem;
   width: 30rem;
 }
+
 .pricing-card__name--background {
-  background-color: #3f2c41;
+  background-color: $fsBackAgency;
   text-align: center;
   font-size: 2.4rem;
   text-transform: uppercase;
   margin: 0;
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
-  font-weight: 400;
+  font-weight: $fw-normal;
 }

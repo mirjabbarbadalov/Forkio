@@ -1,9 +1,10 @@
 @import "../abstracts/all.scss";
+
 .get-header h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8d81ac;
+  color: $hiTitle;
   font-size: 3.2rem;
   font-weight: bold;
   text-align: center;
@@ -11,42 +12,50 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
 .get-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   .get-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
     .icon {
       max-width: 100%;
     }
   }
+
   .get-card-text {
     display: flex;
     flex-direction: column;
+
     .get-card-header {
-      font-weight: 400;
+      font-weight: $fw-normal;
       font-size: 1.6rem;
-      color: #323232;
+      color: $hiName;
       margin-bottom: 0.5rem;
     }
+
     .get-card-paragraph {
       font-size: 1.4rem;
-      color: #848e97;
+      color: $hiDesc;
       font-weight: regular;
       margin-bottom: 2rem;
     }
   }
 }
+
 .code-image {
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
     width: 100%;
   }
