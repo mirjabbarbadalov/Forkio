@@ -16,12 +16,12 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background-image: url("/dist/img/pricing-background.png");
+  background-image: url("../img/pricing-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .pricing-back {
-  background-image: url("/dist/img/pricing-background.png");
+  background-image: url("../img/pricing-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,11 +37,11 @@
   height: 46rem;
   width: 26.5rem;
   margin-bottom: 2rem;
-  background-image: url("/dist/img/card-bg.png");
+  background-image: url("../img/card-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   &__name {
-    background-image: url("/dist/img/heading-bg.png");
+    background-image: url("../img/heading-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -95,7 +95,7 @@
 }
 .agency-theme {
   margin: 0 0 2rem 0;
-  background-image: url("/dist/img/base-agency.png");
+  background-image: url("../img/base-agency.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 55rem;
